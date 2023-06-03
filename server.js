@@ -8,8 +8,8 @@ const nodemailer = require('nodemailer');
 
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'usuario',
-  password: 'senha',
+  user: '',
+  password: '',
   database: 'banco_de_dados',
   port: '3307'
 });
@@ -93,8 +93,8 @@ const transporter = nodemailer.createTransport ({
   port: 587,
   secure: false,
   auth:{
-    user: 'pietraeternbronz@outlook.com',
-    pass: 'pedro910'
+    user: '',
+    pass: ''
   }
 })
 
