@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    image: mysql:latest
+    container_name: meu-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: senha
+      MYSQL_DATABASE: banco_de_dados
+      MYSQL_USER: usuario
+      MYSQL_PASSWORD: senha
+     
+    ports:
+      - "3307:3306"

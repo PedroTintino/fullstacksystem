@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\css\style03.css">
+    <title>Projeto: Simulador</title>
+</head>
+<body>
+<style>
+    
+</style>
+    <div class="navbar">
+        <div class="logo">
+            <img src="\img\A.png" alt="logotipo do projeto">
+            <h2>Norway Consórcios & Investimentos</h2>
+        </div>
+    </div>
+    <div class="intro section">
+        <div class="intro-content">
+            <h2>Etapa 2 - Simulação</h2>
+            <form class="simulator-form" id="simulator-form" method="post" action="/simulacao">
+                <label for="valor">Prazo estipulado (em meses): </label>
+                <input type="number" name="prazo" id="prazo" required><br><br>
+                <label for="valor">Valor desejado(em reais): </label>
+                <input type="number" name="valor" id="valor" required>
+                <label for="resultado">Resultado da estipulação de consórcio(parcelas): </label>
+                <input type="number" id="input-resultado" name="resultado" readonly><br><br>
+                <p style="color: red; font-size: 1.5rem;">Obs: Nosso consórcio trabalha com uma taxa de 5% a.m</p>
+                <button id="submit-form-btn" type="submit">Gerar Contrato</button>
+            </form>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" type="application/javascript"></script>
+<script src="js/script.js" type="application/javascript"></script>
+<script src="js/simulador.js" type="application/javascript"></script>
+
+</body>
+
+</html>

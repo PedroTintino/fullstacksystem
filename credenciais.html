@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\css\style02.css">
+    <title>Projeto: Credenciais</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="\img\A.png" alt="logotipo do projeto">
+            <h2>Norway Consórcios & Investimentos</h2>
+        </div>
+    </div>
+    <div class="intro section">
+        <div class="intro-content">
+            <h2>Etapa 1 - Cadastro</h2>
+            <form class="user-form" id="user-form" method="post" action="/cadastro">
+                <label for="first-name">Primeiro Nome: </label>
+                <input type="text" name="firstName" required>
+                <label for="last-name">Sobrenome: </label>
+                <input type="text" name="lastName" required>
+                <label for="email">Endereço de email: </label>
+                <input type="email" name="email" required>
+                <label for="cpf">CPF: </label>
+                <input type="text" id="cpfInput" required name="cpf" maxlength="14" placeholder="Digite um cpf válido!">
+               <button id="submit-form-btn" type="submit">Enviar Cadastro</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js" type="application/javascript"></script>
+    <script src="js/simulador.js" type="application/javascript"></script>
+    <script src="js/script.js" type="application/javascript"></script>s
+</body>
+
+</html>

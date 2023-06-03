@@ -1,0 +1,126 @@
+:root{
+     --white-color: #FFFFFF;
+     --light-blue: #E9F1FA;
+     --shiny-blue: #00ABE4;
+ }
+ 
+ 
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+ }
+ 
+ html{
+     font-size: 62.5%;
+    font-family: sans-serif;
+ }
+ 
+ h1{
+     font-family: 'Inconsolata', monospace;
+     font-size: 5rem;
+ }
+ 
+ h2{
+     font-size: 3rem;
+ }
+ 
+ .section{
+     height: 100vh;
+     width: 100vw;
+ }
+ 
+ .intro{
+     background-color: #E9F1FA;
+ }
+ 
+ .navbar{
+     height: auto;
+     background-color: black;
+ }
+ 
+ .navbar .logo{
+     display: flex;
+     align-items: end;
+     justify-content: center;
+ }
+ 
+ .navbar .logo  img{
+     padding: 0.5rem;
+     border-radius: 50%;
+     height: 5.5rem;
+     width: 5.5rem;
+ }
+ 
+ .navbar .logo h2{
+     color: aliceblue;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 1.5rem;
+     padding-bottom: 1rem;
+ }
+ 
+ .intro{
+     display: flex;
+     padding: 2rem;
+     background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     position: relative; /* Garante que o ::before esteja posicionado corretamente */
+ }
+ 
+ .intro::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.4); /* Cor e opacidade do overlay */
+     z-index: 1; /* Garante que o overlay esteja acima da imagem */
+   }
+ 
+   .intro-content {
+     padding: 1rem;
+     text-align: center;
+     position: relative;
+     z-index: 2;
+     color: #000000;
+     height: auto;
+     width: 60rem;
+     background-color: var(--light-blue);
+     margin: 0 auto;
+     border-radius: 1rem;
+     overflow-y: hidden;
+   }
+ 
+   .simulator-form{
+     padding: 7rem;
+   }
+ 
+   .simulator-form label{
+     display: flex;
+     padding: 2rem;
+     font-size: 2rem; 
+     font-weight: bold;
+     justify-content: center;
+ 
+   }
+ 
+   .simulator-form input{
+      width: 80%;
+      height: 4rem;
+      font-size: 2rem;
+   }
+ 
+   #submit-form-btn{
+     display: block;
+     padding: 1rem;
+     border: none;
+     background-color: #257a97;
+     color: #E9F1FA;
+     margin: 1rem auto;
+     cursor: pointer;
+   }
+ 
